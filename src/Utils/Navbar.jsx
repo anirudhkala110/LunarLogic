@@ -3,7 +3,7 @@ import './index.css'
 
 const Navbar = () => {
     return (
-        <nav class="container navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top">
+        <nav class="container shadow-md navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
             <div class="container-fluid d-flex align-items-center justify-between">
                 <a class="navbar-brand fs-4" style={{ fontWeight: '700' }} href="#">Lunar Logic</a>
 
