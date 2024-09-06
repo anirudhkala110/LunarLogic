@@ -1,0 +1,14 @@
+.nav-link {
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: .3s ease-in-out;
+}
+.nav-link:hover{
+    border-bottom: 2px solid #007BB6;
+    color: #007BB6;
+    font-weight: 600;
+}
+.nav-link:active{
+    border-bottom: 2px solid black;
+    background:#007BB6;
+    color: white;
+}
