@@ -42,9 +42,63 @@ button:focus {
     border: 0px;
 }
 
-.logos img{
+.logos img {
     width: 100%;
     aspect-ratio: 4/3;
     object-fit: contain;
     /* mix-blend-mode:color-burn; */
+}
+
+/* Base 5 */
+.insightCol {
+    cursor: pointer;
+}
+
+.webinarButton {
+    position: absolute;
+    background-color: #F15A22;
+    color: white;
+    font-weight: 600;
+}
+
+.insightCol:hover .webinarButton {
+    background-color: rgb(2, 2, 41);
+    color: white;
+}
+
+.webinarNames {
+    display: flex;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.664);
+    width: -webkit-fill-available;
+    margin-top: -70px;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease-in !important;
+    opacity: 0;
+}
+.insightCol , .webinarNames{
+    border: #f1592200 1px solid;
+    transition: .3s ease-in-out;
+}
+
+.insightCol:hover, .insightCol:hover .webinarNames {
+    opacity: 1;
+    border: #F15A22 1px solid;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.281);
+}
+
+.insightCol img {
+    height: 25vh;
+    width: 100%;
+    min-height: 250px;
+    min-width: 250px;
+    object-fit: cover;
+}
+
+.supportiveDiv:hover{
+    max-width: max-content;
+}
+.subscribeButton:hover{
+    background-color: rgb(30, 114, 211);
 }
