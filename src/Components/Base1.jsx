@@ -20,13 +20,13 @@ const images = [
 
 const Base1 = () => {
     const [buttonNumber, setButtonNumber] = useState(0)
-    return (
-        <div className="container pt-5">
-            <div className="displayAfter750px shadow px-1 pt-2">
+    return ( 
+        <div className="container pt-5 px-0">
+            <div className="displayAfter750px shadow pt-2">
                 <div className='imgContainer'>
                     {images.map((image, index) => (
                         <div key={index} className="image-container">
-                            <div className='imgInfo p-2' style={{ display: `${buttonNumber == index ? '' : 'none'}` }}>
+                            <div className='imgInfo py-2' style={{ display: `${buttonNumber == index ? '' : 'none'}` }}>
                                 <b className='fs-3'>
                                     {image.info}
                                 </b>
@@ -40,20 +40,20 @@ const Base1 = () => {
                     ))}
                 </div>
                 <div className='d-flex align-items-center justify-between' style={{ minWidth: '35px', overflowX: 'auto' }}>
-                    <button className='imgChangeButtons btn rounded-0 my-1 py-3 w-100 me-1' style={{ background: `${buttonNumber == 0 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 0 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(0)}>Button 1</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 py-3 w-100 me-1' style={{ background: `${buttonNumber == 1 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 1 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(1)}>Button 2</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 py-3 w-100 me-1' style={{ background: `${buttonNumber == 2 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 2 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(2)}>Button 3</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 py-3 w-100 me-1' style={{ background: `${buttonNumber == 3 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 3 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(3)}>Button 4</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 py-3 w-100 me-1' style={{ background: `${buttonNumber == 4 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 4 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(4)}>Button 5</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 py-3 w-100 me-1' style={{ background: `${buttonNumber == 5 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 5 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(5)}>Button 6</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 py-3 w-100     ' style={{ background: `${buttonNumber == 6 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 6 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(6)}>Button 7</button>
+                    <button className='imgChangeButtons btn rounded-0 py-3 w-100 me-1' style={{ background: `${buttonNumber == 0 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 0 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(0)}>Button 1</button>
+                    <button className='imgChangeButtons btn rounded-0 py-3 w-100 me-1' style={{ background: `${buttonNumber == 1 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 1 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(1)}>Button 2</button>
+                    <button className='imgChangeButtons btn rounded-0 py-3 w-100 me-1' style={{ background: `${buttonNumber == 2 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 2 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(2)}>Button 3</button>
+                    <button className='imgChangeButtons btn rounded-0 py-3 w-100 me-1' style={{ background: `${buttonNumber == 3 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 3 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(3)}>Button 4</button>
+                    <button className='imgChangeButtons btn rounded-0 py-3 w-100 me-1' style={{ background: `${buttonNumber == 4 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 4 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(4)}>Button 5</button>
+                    <button className='imgChangeButtons btn rounded-0 py-3 w-100 me-1' style={{ background: `${buttonNumber == 5 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 5 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(5)}>Button 6</button>
+                    <button className='imgChangeButtons btn rounded-0 py-3 w-100     ' style={{ background: `${buttonNumber == 6 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 6 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(6)}>Button 7</button>
                 </div>
             </div>
-            <div className="displayBefore750px shadow px-1 pb-1">
+            <div className="displayBefore750px shadow pb-1">
                 <div className='imgContainer'>
                     {images.map((image, index) => (
                         <div key={index} className="image-container">
-                            <div className='imgInfo750px px-2 pt-3 shadow  my-2' style={{ display: `${buttonNumber == index ? '' : 'none'}` }}>
+                            <div className='imgInfo750px pt-3 shadow  my-2' style={{ display: `${buttonNumber == index ? '' : 'none'}` }}>
                                 <b className='fs-3' style={{display: `${buttonNumber == index ? '' : 'none'}`}}>
                                     {image.info}
                                 </b>
@@ -67,13 +67,13 @@ const Base1 = () => {
                     ))}
                 </div>
                 <div className='d-flex align-items-center justify-between' style={{ minWidth: '35px', overflowX: 'auto' }}>
-                    <button className='imgChangeButtons btn rounded-0 my-1 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 0 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 0 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(0)}>Button 1</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 1 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 1 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(1)}>Button 2</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 2 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 2 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(2)}>Button 3</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 3 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 3 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(3)}>Button 4</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 4 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 4 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(4)}>Button 5</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 5 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 5 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(5)}>Button 6</button>
-                    <button className='imgChangeButtons btn rounded-0 my-1     ' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 6 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 6 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(6)}>Button 7</button>
+                    <button className='imgChangeButtons btn rounded-0 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 0 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 0 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(0)}>Button 1</button>
+                    <button className='imgChangeButtons btn rounded-0 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 1 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 1 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(1)}>Button 2</button>
+                    <button className='imgChangeButtons btn rounded-0 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 2 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 2 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(2)}>Button 3</button>
+                    <button className='imgChangeButtons btn rounded-0 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 3 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 3 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(3)}>Button 4</button>
+                    <button className='imgChangeButtons btn rounded-0 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 4 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 4 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(4)}>Button 5</button>
+                    <button className='imgChangeButtons btn rounded-0 me-1' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 5 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 5 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(5)}>Button 6</button>
+                    <button className='imgChangeButtons btn rounded-0     ' style={{minWidth:"150px",width:'-webkit-fill-available',background: `${buttonNumber == 6 ? "#034EA2" : '#F2F2F3'}`, color: `${buttonNumber == 6 ? "#F2F2F3" : "#034EA2"}` }} onClick={e => setButtonNumber(6)}>Button 7</button>
                 </div>
             </div>
         </div>

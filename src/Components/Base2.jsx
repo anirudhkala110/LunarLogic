@@ -6,9 +6,9 @@ import gta from '../Assets/Logos/gta.png'
 
 const Base2 = () => {
     return (
-        <div className='container py-4 px-4'>
+        <div className='container py-4 px-0'>
             <div>
-                <div className='row py-4'>
+                <div className='row py-4 px-0'>
                     <div className='col-sm-12 col-md-6 py-4'>
                         <b style={{ fontSize: '25px' }}>Lunar Logic - Illuminating Your Digital Path</b>
                         <hr />
@@ -25,7 +25,7 @@ const Base2 = () => {
                 <br />
                 
             </div>
-            <div className='row'>
+            <div className='row px-3'>
                     <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9',borderLeft: '1px solid #C7C8C9' }}>
                         <div className='logos' style={{ minHeight: '200px' }}>
                             <img src={adidas}/>

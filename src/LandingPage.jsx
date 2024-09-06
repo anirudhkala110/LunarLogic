@@ -13,7 +13,7 @@ const LandingPage = () => {
             <div className='container'>
                 <Navbar />
             </div>
-            <div className='base1 container pt-5 mt-5'>
+            <div className='base1 container px-0 mt-5'>
                 <Base1 />
             </div>
             <div className='base2 bg-white'>

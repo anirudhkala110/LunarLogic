@@ -4,7 +4,7 @@ import apple from '../Assets/Logos/apple.jpg'
 import f1s from '../Assets/Logos/f1s.svg'
 import gta from '../Assets/Logos/gta.png'
 const Base4 = () => {
-    const repeater = [0, 1, 2]
+    const repeater = [0, 1]
     return (
         <div>
             <div className='container py-5'>
