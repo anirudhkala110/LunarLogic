@@ -23,33 +23,34 @@ const Base2 = () => {
                 </div>
                 <hr />
                 <br />
-                <div className='row'>
-                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid black' }}>
-                        <div className='logos' style={{ minHeight: '250px' }}>
+                
+            </div>
+            <div className='row'>
+                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9',borderLeft: '1px solid #C7C8C9' }}>
+                        <div className='logos' style={{ minHeight: '200px' }}>
                             <img src={adidas}/>
                             <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
                         </div>
                     </div>
-                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid black' }}>
-                        <div className='logos' style={{ minHeight: '250px' }}>
+                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9',borderLeft: '1px solid #C7C8C9' }}>
+                        <div className='logos' style={{ minHeight: '200px' }}>
                             <img  src={apple}/>
                             <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
                         </div>
                     </div>
-                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid black' }}>
-                        <div className='logos' style={{ minHeight: '250px' }}>
+                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9',borderLeft: '1px solid #C7C8C9' }}>
+                        <div className='logos' style={{ minHeight: '200px' }}>
                             <img src={f1s}/>
                             <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
                         </div>
                     </div>
-                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid black' }}>
-                        <div className='logos' style={{ minHeight: '250px' }}>
+                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9',borderLeft: '1px solid #C7C8C9' }}>
+                        <div className='logos' style={{ minHeight: '200px' }}>
                             <img src={gta}/>
                             <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }
