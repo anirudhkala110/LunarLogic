@@ -21,7 +21,7 @@ const images = [
 const Base1 = () => {
     const [buttonNumber, setButtonNumber] = useState(0)
     return (
-        <div className="container">
+        <div className="container pt-5">
             <div className="displayAfter750px shadow px-1 pt-2">
                 <div className='imgContainer'>
                     {images.map((image, index) => (
