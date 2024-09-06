@@ -26,7 +26,7 @@ const Base1 = () => {
                 <div className='imgContainer'>
                     {images.map((image, index) => (
                         <div key={index} className="image-container">
-                            <div className='imgInfo py-2' style={{ display: `${buttonNumber == index ? '' : 'none'}` }}>
+                            <div className='imgInfo py-2 px-3' style={{ display: `${buttonNumber == index ? '' : 'none'}` }}>
                                 <b className='fs-3'>
                                     {image.info}
                                 </b>
