@@ -144,5 +144,14 @@ button:focus {
 .prev,
 .next {
   position: relative;
+  background: transparent;
+}
+.formActionBtn{
+    background: #034EA2;
+    color: white;
+}
+.formActionBtn:hover{
+    color: white;
+    background: #0584c3;
 }
 
