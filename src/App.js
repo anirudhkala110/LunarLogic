@@ -7,7 +7,7 @@ import Navbar from "./Utils/Navbar";
 function App() {
   return (
     <div className="bg-light" style={{ minWidth: "350px" }}>
-       <Navbar />
+
       <LandingPage />
     </div>
   );
