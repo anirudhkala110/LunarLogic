@@ -8,28 +8,28 @@ const Base4 = () => {
     return (
         <div>
             <div className='container py-5'>
-                <button className='btn fs-1'>Our clients</button>
+                <button className='btn fs-1' style={{fontSize:'700'}}>Our clients</button>
                 <div>
                     {
                         repeater.map(i => (
                             <div className='row' key={i}>
-                                <div className='d-flex justify-content-center align-items-center col-sm-12 col-md-3' style={{border:'1px solid #E6E6E6'}}>
-                                    <div style={{ objectFit: 'contain', aspectRatio: '', }}>
+                                <div className='d-flex justify-content-center align-items-center col-sm-6 mb-3 col-md-3' style={{border:'1px solid #E6E6E6'}}>
+                                    <div className='logos' style={{ objectFit: 'contain', aspectRatio: '', }}>
                                         <img src={adidas} />
                                     </div>
                                 </div>
-                                <div className='d-flex justify-content-center align-items-center col-sm-12 col-md-3' style={{border:'1px solid #E6E6E6'}}>
-                                    <div style={{ objectFit: 'contain', aspectRatio: '', }}>
+                                <div className='d-flex justify-content-center align-items-center col-sm-6 mb-3 col-md-3' style={{border:'1px solid #E6E6E6'}}>
+                                    <div className='logos' style={{ objectFit: 'contain', aspectRatio: '', }}>
                                         <img src={apple} />
                                     </div>
                                 </div>
-                                <div className='d-flex justify-content-center align-items-center col-sm-12 col-md-3' style={{border:'1px solid #E6E6E6'}}>
-                                    <div style={{ objectFit: 'contain', aspectRatio: '', }}>
+                                <div className='d-flex justify-content-center align-items-center col-sm-6 mb-3 col-md-3' style={{border:'1px solid #E6E6E6'}}>
+                                    <div className='logos' style={{ objectFit: 'contain', aspectRatio: '', }}>
                                         <img src={f1s} />
                                     </div>
                                 </div>
-                                <div className='d-flex justify-content-center align-items-center col-sm-12 col-md-3' style={{border:'1px solid #E6E6E6'}}>
-                                    <div style={{ objectFit: 'contain', aspectRatio: '', }}>
+                                <div className='d-flex justify-content-center align-items-center col-sm-6 mb-3 col-md-3' style={{border:'1px solid #E6E6E6'}}>
+                                    <div className='logos' style={{ objectFit: 'contain', aspectRatio: '', }}>
                                         <img src={gta} />
                                     </div>
                                 </div>
