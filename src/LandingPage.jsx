@@ -6,6 +6,7 @@ import Base3 from './Components/Base3'
 import Base4 from './Components/Base4'
 import Base5 from './Components/Base5'
 import NewLetterSignup from './Components/NewLetterSignup'
+import KeyPartners from './Components/KeyPartners'
 
 const LandingPage = () => {
     return (
@@ -28,8 +29,11 @@ const LandingPage = () => {
             <div className='base5 bg-light'>
                 <Base5 />
             </div>
-            <div className='newsLetterSignUp bg-dark'>
+            <div className='newsLetterSignUp '>
                 <NewLetterSignup />
+            </div>
+            <div className='keyPartners'>
+                <KeyPartners />
             </div>
         </div>
     )

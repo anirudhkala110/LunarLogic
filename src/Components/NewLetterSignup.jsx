@@ -2,9 +2,9 @@ import React from 'react'
 
 const NewLetterSignup = () => {
     return (
-        <div>
-            <div className='container align-items-center text-white py-5 '>
-                <div className='row py-3'>
+        <div className='bg-dark'>
+            <div className='container align-items-center text-white py-3 '>
+                <div className='row py-2'>
                     <div className='col-sm-12 col-md-6'>
                         <p className='fs-3' style={{fontWeight:'700'}}>Sign up to our weekly newsletter to find out trending insights.</p>
                     </div>

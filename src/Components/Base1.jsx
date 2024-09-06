@@ -9,10 +9,10 @@ import pic7 from '../Assets/Images/pic7.jpg';
 import './Base.css'
 
 const images = [
+    { img: pic5, info: 'Use Digital as a catalyst to build a cohesive, future-ready growth strategy.' },
     { img: pic2, info: 'Unleash the power of communication & creative to amplify digital marketing performance.' },
     { img: pic3, info: 'Get actionable insights for better campaign design & enhanced customer lifetime value.' },
     { img: pic4, info: 'Understand your customer’s lifecycle needs, pain points & interactions with your brand.' },
-    { img: pic5, info: 'Use Digital as a catalyst to build a cohesive, future-ready growth strategy.' },
     { img: pic1, info: 'Realize frictionless consumer journeys using scientific UI/UX Design techniques.' },
     { img: pic6, info: 'Navigate and keep pace with the latest trends in the digital landscape & technology..' },
     { img: pic7, info: 'Supercharge your digital media budget through better planning, buying & optimization.' }

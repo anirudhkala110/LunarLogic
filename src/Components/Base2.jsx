@@ -23,34 +23,47 @@ const Base2 = () => {
                 </div>
                 <hr />
                 <br />
-                
+
             </div>
             <div className='row px-3'>
-                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9',borderLeft: '1px solid #C7C8C9' }}>
-                        <div className='logos' style={{ minHeight: '200px' }}>
-                            <img src={adidas}/>
-                            <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
-                        </div>
-                    </div>
-                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9',borderLeft: '1px solid #C7C8C9' }}>
-                        <div className='logos' style={{ minHeight: '200px' }}>
-                            <img  src={apple}/>
-                            <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
-                        </div>
-                    </div>
-                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9',borderLeft: '1px solid #C7C8C9' }}>
-                        <div className='logos' style={{ minHeight: '200px' }}>
-                            <img src={f1s}/>
-                            <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
-                        </div>
-                    </div>
-                    <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9',borderLeft: '1px solid #C7C8C9' }}>
-                        <div className='logos' style={{ minHeight: '200px' }}>
-                            <img src={gta}/>
+                <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9', borderLeft: '1px solid #C7C8C9' }}>
+                    <div className='logos' style={{ minHeight: '200px' }}>
+                        <div>
+                            <center><img src={adidas} /></center>
+                            <hr />
                             <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
                         </div>
                     </div>
                 </div>
+                <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9', borderLeft: '1px solid #C7C8C9' }}>
+                    <div className='logos' style={{ minHeight: '200px' }}>
+                        <div>
+                            <center><img src={apple} /></center>
+                            <hr />
+                            <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9', borderLeft: '1px solid #C7C8C9' }}>
+                    <div className='logos' style={{ minHeight: '200px' }}>
+                        <div>
+                            <center><img src={f1s} /></center>
+                            <hr />
+                            <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div className=' d-flex justify-center col-sm-12 col-md-3' style={{ borderRight: '1px solid #C7C8C9', borderLeft: '1px solid #C7C8C9' }}>
+                    <div className='logos' style={{ minHeight: '200px' }}>
+                        <div>
+                            <center> <img src={gta} /></center>
+                            <hr />
+                            <p>This is the description or any other part of this division so that anyone can write something about the logo or any thing related to these logo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
