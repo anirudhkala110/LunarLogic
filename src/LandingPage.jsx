@@ -17,13 +17,13 @@ const LandingPage = () => {
     return (
         <div className=''>
             <div className=''>
-                <Navbar />
                 <Router>
+                    <Navbar />
                     <Routes>
                         <Route path='/' element={<HomePage />} />
                     </Routes>
+                    <Footer />
                 </Router>
-                <Footer />
             </div>
         </div>
     )

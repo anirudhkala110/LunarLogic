@@ -6,13 +6,13 @@ import Footer3 from './Footer3'
 const Footer = () => {
   return (
     <div>
-      <div className='p-3'>
+      <div className='p-3' style={{ background: "#034EA2" }}>
         <Footer1 />
       </div>
-      <div className='p-3'>
+      <div className='p-3' style={{ background: "#034EA2" }}>
         <Footer2 />
       </div>
-      <div className='p-3'>
+      <div className='p-3' style={{ background: "#034EA2" }}>
         <Footer3 />
       </div>
     </div>
