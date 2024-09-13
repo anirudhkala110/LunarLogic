@@ -3,6 +3,7 @@
     transition: .3s ease-in-out;
     font-weight: 600;
     font-size: 14px;
+    width: fit-content;
 }
 
 .nav-link:hover {
@@ -14,4 +15,21 @@
     border-bottom: 2px solid black;
     background: #007BB6;
     color: white;
+}
+
+.nav-link a:active {
+    border-bottom: 2px solid black;
+    background: #007BB6;
+    color: white;
+}
+
+.setWidth1000px {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width:1000px) {
+    .setWidth1000px {
+        display: block;
+    }
 }

@@ -9,39 +9,21 @@ import NewLetterSignup from './Components/NewLetterSignup'
 import KeyPartners from './Components/KeyPartners'
 import Base6 from './Components/Base6'
 import TeamPage from './Components/TeamPage'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './Components/HomePage'
+import Footer from './Utils/Footer'
 
 const LandingPage = () => {
     return (
         <div className=''>
-            <div className='container'>
+            <div className=''>
                 <Navbar />
-            </div>
-            <div className='base1 container px-0 pt-5'>
-                <Base1 />
-            </div>
-            <div className='base2 bg-white'>
-                <Base2 />
-            </div>
-            <div className='base3 bg-light'>
-                <Base3 />
-            </div>
-            <div className='base4 bg-white'>
-                <Base4 />
-            </div>
-            <div className='base5 bg-light'>
-                <Base5 />
-            </div>
-            <div className='newsLetterSignUp '>
-                <NewLetterSignup />
-            </div>
-            <div className='keyPartners'>
-                <KeyPartners />
-            </div>
-            <div className='inNews bg-white'>
-                <Base6 />
-            </div>
-            <div className='reachOutTeam'>
-                <TeamPage />
+                <Router>
+                    <Routes>
+                        <Route path='/' element={<HomePage />} />
+                    </Routes>
+                </Router>
+                <Footer />
             </div>
         </div>
     )
