@@ -3,8 +3,8 @@ import React from 'react'
 const Footer3 = () => {
     return (
         <div className='container'>
-            <form className='form'>
-                <p className='fw-semibold my-2 text-white'>Schedule A CallBack</p>
+            <p className='fw-semibold my-2 text-white'>Schedule A CallBack</p>
+            <form className='form px-3' style={{ maxWidth: '1000px' }}>
                 <div className='input-group mb-3'>
                     <label className='mb-2' style={{ color: '#B3E6FF' }}>Service Interested <sup className='text-danger'>*</sup></label>
                     <select class="form-control w-100" id="" name="">
@@ -52,9 +52,11 @@ const Footer3 = () => {
                     <label className='mb-2' style={{ color: '#B3E6FF' }}>Description <sup className='text-danger'>*</sup></label>
                     <textarea type='text' className='form-control w-100' rows={5} style={{ background: 'transparent', color: '#B3E6FF' }} />
                 </div>
-                <div className='input-group mb-3 d-flex align-items-center'>
-                    <input type='checkbox' className='' style={{ background: 'transparent', color: '#B3E6FF' }} />
-                    <label className='mb-2' style={{ color: '#B3E6FF' }}>Select this box to receive updates and marketing. You can change your preference at any time as per our Privacy Policy. <sup className='text-danger'>*</sup></label>
+                <div className='input-group mb-3'>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" /> &nbsp;&nbsp;&nbsp;
+                    <label class="form-check-label" for="flexCheckChecked" style={{ color: '#B3E6FF' }}>
+                        Select this box to receive updates and marketing. You can change your preference at any time as per our Privacy Policy. <sup className='text-danger'>*</sup>
+                    </label>
                 </div>
             </form>
             <button className='btn formButton text-uppercase rounded-0 me-2 my-2'>
