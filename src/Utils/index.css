@@ -33,3 +33,16 @@
         display: block;
     }
 }
+
+
+.formButton {
+    color: #B3E6FF;
+    border: 2px solid;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+.formButton:hover {
+    background-color: #0B7CAC;
+    color: #B3E6FF;
+}
