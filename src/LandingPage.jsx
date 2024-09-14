@@ -33,8 +33,8 @@ const LandingPage = () => {
                     <Footer />
                 </Router>
             </div>
-            <div className='sideFixed2 fixed-bottom p-3 rounded-circle text-white my-3 fs-5 mx-3' style={{ background: '#54609D', maxWidth: 'min-content' }}>
-                Box
+            <div className='sideFixed2 fixed-bottom px-2 rounded-2 text-white my-3 fs-5 mx-3' style={{ background: '#54609D', maxWidth: 'min-content' }} onClick={{}}>
+                <a href="#top"><i className='bi bi-arrow-up'></i></a>
             </div>
         </div>
     )

@@ -13,7 +13,7 @@ import BenchMark from './BenchMark'
 const HomePage = () => {
     return (
         <div>
-            <div className='base1 container px-0 pt-5'>
+            <div className='base1 container px-0 pt-5' id="top">
                 <Base1 />
             </div>
             <div className='base2 bg-white'>

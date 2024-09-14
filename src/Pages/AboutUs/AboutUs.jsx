@@ -13,7 +13,7 @@ import TeamPage from '../../Components/TeamPage'
 const AboutUs = () => {
     return (
         <div className='' style={{ minWidth: '400px' }}>
-            <div className='aboutbase1'>
+            <div className='aboutbase1' id="top">
                 <AboutBase1 />
             </div>
             <div className='aboutLL bg-white py-5' id="aboutLL">
