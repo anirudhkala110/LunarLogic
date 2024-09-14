@@ -87,7 +87,8 @@ button:active {
     z-index: 200;
 }
 
-button.prev, button.next {
+button.prev,
+button.next {
     z-index: 1000;
     background-color: #034EA2;
     color: white;
@@ -168,4 +169,49 @@ button.disabled {
     margin-top: 10px;
     font-size: 1.1rem;
     font-weight: normal;
+}
+
+.hoverImageForDescriptionInnerDiv {
+    backdrop-filter: blur(50px);
+    /* background-color: red; */
+    color: white;
+    position: absolute;
+    margin-top: -127px;
+    max-width: 296px;
+    transition: .1s ease-in-out;
+}
+
+.hoverImageForDescriptionInnerDiv:hover {
+    margin-top: -170px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 170px;
+    cursor: pointer;
+}
+
+.Image {
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.Image:hover .hoverImageForDescriptionInnerDiv {
+    margin-top: -170px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 170px;
+    cursor: pointer;
+}
+
+.bi-linkedin {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 16px;
+    filter: invert(0);
+    z-index: 300;
+    transform: scale(2);
+    color: #034EA2;
+}
+
+.hoverImageForDescriptionInnerDiv {
+    height: 127px;
 }

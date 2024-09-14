@@ -21,7 +21,7 @@ const AboutBase1 = () => {
                     <a href='#aboutLL' className={`${buttonNumber == 1 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(1)} >Overview</a>
                     <a href='#values' className={`${buttonNumber == 2 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(2)} >Our Values</a>
                     <a href='#groups' className={`${buttonNumber == 3 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(3)} >Group</a>
-                    <a href='#aboutLL' className={`${buttonNumber == 4 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(4)} >Meet Our Leaders</a>
+                    <a href='#leadershipTeamGroup' className={`${buttonNumber == 4 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(4)} >Meet Our Leaders</a>
                     <a href='#aboutLL' className={`${buttonNumber == 5 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(5)} >Awards & Recognition</a>
                 </div>
             </div>

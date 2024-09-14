@@ -5,6 +5,8 @@ import React from 'react'
 import OurValues from './OurValues'
 import Groups from './Groups'
 import SpecialisedBusinessUnit from './SpecialisedBusinessUnit'
+import SettingTheStage from './SettingTheStage'
+import LeadershipTeamGroup from './LeadershipTeamGroup'
 
 const AboutUs = () => {
     return (
@@ -23,6 +25,12 @@ const AboutUs = () => {
             </div>
             <div className='SpecialisedBusinessUnit py-5' style={{ background: '#034EA2' }} id="groups">
                 <SpecialisedBusinessUnit />
+            </div>
+            <div className='SettingTheStage bg-light py-5'>
+                <SettingTheStage />
+            </div>
+            <div className='leaderTeamGroup bg-white py-5' id="leadershipTeamGroup">
+                <LeadershipTeamGroup />
             </div>
         </div>
     )
