@@ -8,6 +8,7 @@ import SpecialisedBusinessUnit from './SpecialisedBusinessUnit'
 import SettingTheStage from './SettingTheStage'
 import LeadershipTeamGroup from './LeadershipTeamGroup'
 import Awards from './Awards'
+import TeamPage from '../../Components/TeamPage'
 
 const AboutUs = () => {
     return (
@@ -35,6 +36,9 @@ const AboutUs = () => {
             </div>
             <div className='awards bg-light py-5' id="award">
                 <Awards />
+            </div>
+            <div className='contactus' id="contactUs">
+                <TeamPage />
             </div>
         </div>
     )

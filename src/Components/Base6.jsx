@@ -58,7 +58,7 @@ const Base6 = () => {
                             style={{background:`${currentIndex === 0?'#001ab5a6':'#034EA2'}`}}
                             
                         >
-                            <i className='bi bi-arrow-left fs-2 ' style={{fontWeight:'700',filter:'drop-shadow(0px 0px 1px black)'}}></i>
+                            <i className='bi bi-arrow-left ' style={{fontSize:"1.2em",fontWeight:'700',filter:'drop-shadow(0px 0px 1px black)'}}></i>
                         </button>
                         <div className="slider-container" style={{ overflow: 'hidden', width: '100%' }}>
                             <div
@@ -91,7 +91,7 @@ const Base6 = () => {
                             style={{background:`${currentIndex===keyPartners.length-1?'#001ab5a6':'#034EA2'}`}}
                             disabled={currentIndex >= keyPartners.length - imagesPerView}
                         >
-                           <i className='bi bi-arrow-right fs-2 ' style={{fontWeight:'700',filter:'drop-shadow(0px 0px 1px black)'}}></i>
+                           <i className='bi bi-arrow-right ' style={{fontSize:"1.2em",fontWeight:'700',filter:'drop-shadow(0px 0px 1px black)'}}></i>
                         </button>
                     </div>
                 </div>
