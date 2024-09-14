@@ -1,0 +1,66 @@
+.aboutbase1 {
+    background: linear-gradient(to right, black, rgb(53, 52, 52), white);
+}
+
+.btnNormal {
+    border: 5px solid #f1592200;
+    cursor: pointer;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: white;
+}
+
+.btnActive {
+    border: 5px solid #f15922;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+button:focus {
+    border: 5px solid #F15A22;
+    outline: none;
+}
+
+button:active {
+    background-color: transparent;
+    border: none;
+}
+
+
+.showOnHover1,
+.showOnHover2,
+.showOnHover3,
+.showOnHover4 {
+    position: relative;
+    opacity: 0;
+    display: none;
+    top: -550px;
+    z-index: 0;
+}
+
+.showHoverDiv4:hover .showOnHover4,
+.showHoverDiv3:hover .showOnHover3,
+.showHoverDiv2:hover .showOnHover2,
+.showHoverDiv1:hover .showOnHover1 {
+    transition: 1s ease-in-out;
+    display: block;
+    animation: identifier 0.4s linear;
+    top: 10px;
+    opacity: 1;
+    height: max-content;
+}
+
+@keyframes identifier {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

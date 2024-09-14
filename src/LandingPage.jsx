@@ -12,6 +12,7 @@ import TeamPage from './Components/TeamPage'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './Components/HomePage'
 import Footer from './Utils/Footer'
+import AboutUs from './Pages/AboutUs/AboutUs'
 
 const LandingPage = () => {
     return (
@@ -21,6 +22,7 @@ const LandingPage = () => {
                     <Navbar />
                     <Routes>
                         <Route path='/' element={<HomePage />} />
+                        <Route path='/about_us' element={<AboutUs />} />
                     </Routes>
                     <Footer />
                 </Router>
