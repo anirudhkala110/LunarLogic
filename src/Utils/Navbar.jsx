@@ -4,7 +4,7 @@ import './index.css';
 const Navbar = () => {
     return (
         <nav className="container-fluid shadow-md navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
-            <div className="container-fluid d-flex align-items-center justify-between">
+            <div className="container d-flex align-items-center justify-between">
                 <a className="navbar-brand" style={{ fontWeight: '700', fontSize: '1.1em' }} href="/">Lunar Logic</a>
 
                 {/* Offcanvas Toggle Button */}

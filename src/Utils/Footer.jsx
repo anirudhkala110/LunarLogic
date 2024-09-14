@@ -6,7 +6,7 @@ import Footer4 from './Footer4'
 
 const Footer = () => {
   return (
-    <div>
+    <div style={{ minWidth: "400px" }}>
       <div className='p-3' style={{ background: "#034EA2" }}>
         <Footer1 />
       </div>

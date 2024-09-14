@@ -16,7 +16,7 @@ import AboutUs from './Pages/AboutUs/AboutUs'
 
 const LandingPage = () => {
     return (
-        <div className=''>
+        <div className='' style={{ minWidth: "400px" }}>
             <div className=''>
                 <Router>
                     <Navbar />

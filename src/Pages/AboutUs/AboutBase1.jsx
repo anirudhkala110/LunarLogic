@@ -5,10 +5,10 @@ const AboutBase1 = () => {
     return (
         <div className='container inter-700'>
             <div className='row py-5 d-flex align-items-center justify-content-start' style={{ minHeight: '80vh' }}>
-                <div className='' style={{ fontSize: "58px", lineHeight: '64px' }}>
+                <div className='' style={{ fontSize: "", lineHeight: '64px' }}>
                     <b className=' my-3 ' style={{ color: '#F15A22', fontSize: '20px' }}>WHO WE ARE</b>
-                    <div className=' text-white' style={{ maxWidth: '950px' }}>
-                        <p>
+                    <div className=' text-white' style={{ maxWidth: '950px',width:'100%' }}>
+                        <p className='fs-1'>
                             We’re here as your partners to power you to <b className='' style={{ color: '#FDB913' }}>#ChallengeTheNow</b> to build a digital future.
                         </p>
                     </div>

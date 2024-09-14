@@ -7,7 +7,7 @@ import Groups from './Groups'
 
 const AboutUs = () => {
     return (
-        <div className=''>
+        <div className='' style={{minWidth:'400px'}}>
             <div className='aboutbase1'>
                 <AboutBase1 />
             </div>
