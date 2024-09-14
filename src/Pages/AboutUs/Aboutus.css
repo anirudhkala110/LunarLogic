@@ -64,3 +64,108 @@ button:active {
         opacity: 1;
     }
 }
+
+.timeline-slider-container {
+    position: relative;
+    width: 80%;
+    margin: 2rem auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    height: 500px;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+}
+
+button.prev, button.next {
+    z-index: 1000;
+    background-color: #034EA2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+button.disabled {
+    background-color: #001ab5a6;
+    cursor: not-allowed;
+}
+
+.timeline-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+.timeline-item {
+    flex: 0 0 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.timeline-item.inactive {
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: transform 0.5s ease;
+    margin: 0 20px;
+}
+
+.timeline-item.active {
+    transform: scale(1.2);
+    opacity: 1;
+    transition: transform 0.5s ease;
+    z-index: 10;
+}
+
+.milestone-content.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.milestone-content.inactive h3 {
+    font-size: 1.2rem;
+}
+
+.milestone-content.inactive p {
+    font-size: 0.9rem;
+}
+
+.partner-logo-large {
+    width: 250px;
+    height: auto;
+    margin: 20px 50px;
+}
+
+.partner-logo-small {
+    width: 80px;
+    height: auto;
+}
+
+.milestone-info {
+    font-weight: bold;
+}
+
+.partners {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: normal;
+}

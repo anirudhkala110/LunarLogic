@@ -1,0 +1,83 @@
+.previousPic {
+    width: 50px;
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.nextPic {
+    width: 50px;
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.previousPicBtn {
+    transition: .2s ease-in-out;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    background: #0263da;
+}
+
+.nextPicBtn {
+    transition: .2s ease-in-out;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #0263da;
+    color: white;
+}
+
+.previousPic:hover,
+.nextPic:hover {}
+
+.previousPic:hover .previousPicBtn,
+.nextPic:hover .nextPicBtn {
+    background: #1066cf57;
+    transform: scale(1.2);
+    color: white;
+    font-weight: 700
+}
+
+
+.leftDiv,
+.rightDiv {}
+
+.leftDiv img,
+.rightDiv img {
+    transform: scale(0.7);
+}
+
+.middleDiv {}
+
+.middleDiv img {
+    transform: scale(1);
+}
+
+.minWidth1000px {
+    display: block;
+}
+
+.maxwidth1000px {
+    display: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .minWidth1000px {
+        display: none;
+    }
+
+    .maxwidth1000px {
+        display: block;
+    }
+}

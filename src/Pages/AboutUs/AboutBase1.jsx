@@ -11,6 +11,8 @@ const AboutBase1 = () => {
                         <p className='fs-1'>
                             We’re here as your partners to power you to <b className='' style={{ color: '#FDB913' }}>#ChallengeTheNow</b> to build a digital future.
                         </p>
+                        <br/>
+                        <b className='mt-4' style={{fontSize:'1.3rem',fontWeight:'300',marginTop:'100px'}}>That’s where a multi-skilled expert comes into the picture. One entity that has the solutions across platforms, genres and media.</b>
                     </div>
                 </div>
             </div>

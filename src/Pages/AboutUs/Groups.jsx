@@ -1,4 +1,6 @@
 import React from 'react'
+import OurJourneySlider from './OurJourneySlider'
+import NewSlider from './NewSlider'
 
 const Groups = () => {
     return (
@@ -30,9 +32,15 @@ const Groups = () => {
                 </div>
             </div>
             <div>
-                <center className='mt-5' style={{ fontWeight: '300',color:'#007BB6' }}>BUSINESS ROADMAP</center>
+                <center className='mt-5' style={{ fontWeight: '300', color: '#007BB6' }}>BUSINESS ROADMAP</center>
                 <center className='' style={{ fontWeight: '', fontSize: '40px' }}>Our Journey</center>
                 <center style={{ fontSize: '22px' }}>Building India’s first Digital Marketing Transformation Network for the world</center>
+            </div>
+            {/* <div className='my-3'>
+                <OurJourneySlider />
+            </div> */}
+            <div className='my-3'>
+                <NewSlider />
             </div>
         </div>
     )
