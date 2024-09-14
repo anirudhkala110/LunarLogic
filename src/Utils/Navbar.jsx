@@ -4,7 +4,7 @@ import './index.css';
 const Navbar = () => {
     return (
         <nav className="container-fluid shadow-md navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
-            <div className="container d-flex align-items-center justify-between">
+            <div className="container-fluid d-flex align-items-center justify-between">
                 <a className="navbar-brand" style={{ fontWeight: '700', fontSize: '1.1em' }} href="/">Lunar Logic</a>
 
                 {/* Offcanvas Toggle Button */}
@@ -25,11 +25,11 @@ const Navbar = () => {
                                     WHO WE ARE
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a className="dropdown-item" href="/about_us">About Us</a></li>
-                                    <li><a className="dropdown-item" href="#">Leadership Team</a></li>
-                                    <li><a className="dropdown-item" href="#">#ChallengeTheNow</a></li>
-                                    <li><a className="dropdown-item" href="#">Contact Us</a></li>
-                                    <li><a className="dropdown-item" href="#">Partners</a></li>
+                                    <li style={{zIndex:'100'}}><a className="dropdown-item" href="/about_us">About Us</a></li>
+                                    <li style={{zIndex:'100'}}><a className="dropdown-item" href="#">Leadership Team</a></li>
+                                    <li style={{zIndex:'100'}}><a className="dropdown-item" href="#">#ChallengeTheNow</a></li>
+                                    <li style={{zIndex:'100'}}><a className="dropdown-item" href="#">Contact Us</a></li>
+                                    <li style={{zIndex:'100'}}><a className="dropdown-item" href="#">Partners</a></li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown">

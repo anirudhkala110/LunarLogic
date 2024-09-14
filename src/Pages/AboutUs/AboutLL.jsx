@@ -6,7 +6,7 @@ const AboutLL = () => {
         <div className='container bg-white py-5'>
             <div className='row'>
                 <div className='col-sm-12 col-md-6 col-lg-6 col-xl-6'>
-                    <p className='mb-5' style={{ color: '#007BB6' }}>ABOUT LUNAR LOGIC</p>
+                    <p className='my-5 pt-5' style={{ color: '#007BB6' }}>ABOUT LUNAR LOGIC</p>
                     <b className='' style={{ fontSize: '30px', lineHeight: '36px' }}>
                         Over 1200 experts across four companies - LS Digital, Langoor, F1Studioz and Social Panga come together to empower your brands.
                     </b>

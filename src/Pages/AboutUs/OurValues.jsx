@@ -3,8 +3,8 @@ import React from 'react'
 const OurValues = () => {
     return (
         <div className='py-5'>
-            <div className='container w-100'>
-                <div className='row'>
+            <div className='container w-100 pt-5'>
+                <div className='row mt-5'>
                     <div className='col-md-3 col-sm-12'>
                         <p className='mb-4 fw-semibold' style={{ color: '#007BB6' }}>OUR VALUES</p>
                         <b className='' style={{ fontSize: '30px', lineHeight: '36px' }}>Values That Define Us</b>
