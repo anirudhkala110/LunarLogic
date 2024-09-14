@@ -15,7 +15,7 @@ const LeadershipTeamGroup = () => {
                 </div>
                 <div className='row py-5'>
                     {array.map((data, idx) => (
-                        <div className='col-sm-12 col-md-3 col-lg-3 col-sl-3 col-xxl-3 mb-4' key={idx}>
+                        <div className='col-sm-12 col-md-4 col-lg-3 col-sl-3 col-xxl-3 mb-5 d-flex justify-content-center' key={idx}>
                             <div className='hoverImageForDescription'>
                                 <i className='bi bi-linkedin' style={{}}></i>
                                 <img className='Image' src={randomPic} style={{ height: '400px', width: '350px', objectFit: 'cover' }} />

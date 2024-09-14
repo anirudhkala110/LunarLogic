@@ -175,9 +175,10 @@ button.disabled {
     backdrop-filter: blur(50px);
     /* background-color: red; */
     color: white;
-    position: absolute;
+    position: relative;
     margin-top: -127px;
-    max-width: 296px;
+    max-width: 350px;
+    width: min-content;
     transition: .1s ease-in-out;
 }
 

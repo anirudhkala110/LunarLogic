@@ -7,6 +7,7 @@ import Groups from './Groups'
 import SpecialisedBusinessUnit from './SpecialisedBusinessUnit'
 import SettingTheStage from './SettingTheStage'
 import LeadershipTeamGroup from './LeadershipTeamGroup'
+import Awards from './Awards'
 
 const AboutUs = () => {
     return (
@@ -31,6 +32,9 @@ const AboutUs = () => {
             </div>
             <div className='leaderTeamGroup bg-white py-5' id="leadershipTeamGroup">
                 <LeadershipTeamGroup />
+            </div>
+            <div className='awards bg-light py-5' id="award">
+                <Awards />
             </div>
         </div>
     )
