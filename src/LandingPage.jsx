@@ -27,6 +27,12 @@ const LandingPage = () => {
                     <Footer />
                 </Router>
             </div>
+            <div className='sideFixed py-4 fs-5 px-3'>
+                Digital Business Transformation
+            </div>
+            <div className='sideFixed2 fixed-bottom p-3 rounded-circle text-white my-3 fs-5 mx-3' style={{background:'#54609D',maxWidth:'min-content'}}>
+                Box
+            </div>
         </div>
     )
 }
