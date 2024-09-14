@@ -4,10 +4,11 @@ import './Aboutus.css'
 import React from 'react'
 import OurValues from './OurValues'
 import Groups from './Groups'
+import SpecialisedBusinessUnit from './SpecialisedBusinessUnit'
 
 const AboutUs = () => {
     return (
-        <div className='' style={{minWidth:'400px'}}>
+        <div className='' style={{ minWidth: '400px' }}>
             <div className='aboutbase1'>
                 <AboutBase1 />
             </div>
@@ -19,6 +20,9 @@ const AboutUs = () => {
             </div>
             <div className='groups bg-light py-5' id="groups">
                 <Groups />
+            </div>
+            <div className='SpecialisedBusinessUnit py-5' style={{ background: '#034EA2' }} id="groups">
+                <SpecialisedBusinessUnit />
             </div>
         </div>
     )

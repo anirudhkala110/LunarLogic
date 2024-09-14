@@ -25,14 +25,14 @@ const NewSlider = () => {
 
     // Handle Next Slide
     const handleNext = () => {
-        if(currentIndex <keyMilestones.length-1 )
-            setCurrentIndex(currentIndex+1);
+        if (currentIndex < keyMilestones.length - 1)
+            setCurrentIndex(currentIndex + 1);
     };
 
     // Handle Previous Slide
     const handlePrev = () => {
-        if(currentIndex > 0 )
-        setCurrentIndex(currentIndex-1);
+        if (currentIndex > 0)
+            setCurrentIndex(currentIndex - 1);
     };
 
     // Handle keyboard navigation
@@ -70,29 +70,29 @@ const NewSlider = () => {
                 style={{ minHeight: '500px', position: 'relative' }}
             >
                 {/* Previous Button */}
-                <button className={`m-0 previousPic`} onClick={handlePrev} disabled={currentIndex===0} style={{cursor:`${currentIndex===0?'not-allowed':'pointer'}`}}>
+                <button className={`m-0 previousPic`} onClick={handlePrev} disabled={currentIndex === 0} style={{ cursor: `${currentIndex === 0 ? 'not-allowed' : 'pointer'}` }}>
                     <i className="bi bi-chevron-left previousPicBtn" style={{ fontWeight: '', fontSize: '2em' }}></i>
                 </button>
 
                 {/* Slider Wrapper */}
                 <div className='minWidth1000px'>
                     <div
-                        className="slider-wrapper border d-flex"
-                        style={{ overflow: 'hidden', width: '100%', height: '500px' }}
+                        className="slider-wrapper d-flex"
+                        style={{ overflow: 'hidden', width: '100%', maxWidth: '1000px', height: '500px' }}
                     >
                         <div
                             className="slides-container mx-0"
                             style={{
                                 display: 'flex',
                                 width: `${keyMilestones.length * 100}%`,
-                                transform: `translateX(${(40 - currentIndex * (100 / keyMilestones.length))}%)`,
+                                transform: `translateX(${((18 - currentIndex * 10) - (100 / keyMilestones.length))}%)`,
                                 transition: '0.5s ease-in-out',
                             }}
                         >
                             {keyMilestones.map((data, idx) => (
                                 <div
                                     key={idx}
-                                    className={`slide py-4 border mx-0 px-0 ${currentIndex === idx ? 'align-items-center' : 'align-items-end'}`}
+                                    className={`slide py-4 mx-0 px-0 ${currentIndex === idx ? 'align-items-center' : 'align-items-end'}`}
                                     style={{
                                         minWidth: '250px',
                                         width: `${100 / keyMilestones.length}%`,
@@ -103,23 +103,28 @@ const NewSlider = () => {
                                         transition: 'transform 0.5s ease-in-out',
                                     }}
                                 >
-                                    <div className='border text-center'>
-                                        <img
-                                            src={data.img}
-                                            alt={data.year}
-                                            style={{
-                                                width: currentIndex === idx ? '250px' : '25px',
-                                                transition: '0.3s ease',
-                                            }}
-                                        />
-                                        <p>{data.employees}</p>
-                                        {data.partners.length > 0 && (
-                                            <ul>
-                                                {data.partners.map((partner, i) => (
-                                                    <li key={i}>{partner}</li>
-                                                ))}
-                                            </ul>
-                                        )}
+                                    <div>
+                                        <center className='mb-4'>{data.employees}</center>
+                                        <div className='text-center py-5 rounded shadow' style={{ width: "400px", borderBottom: `${currentIndex == idx ? `10px solid rgb(255, ${(currentIndex * 50)}, 50, 100%)` : ''}` }}>
+                                            <center>
+                                                <img
+                                                    src={data.img}
+                                                    alt={data.year}
+                                                    style={{
+                                                        width: currentIndex === idx ? '250px' : '25px',
+                                                        transition: '0.3s ease',
+                                                    }}
+                                                />
+                                            </center>
+
+                                            {data.partners.length > 0 && (
+                                                <ul>
+                                                    {data.partners.map((partner, i) => (
+                                                        <li key={i}>{partner}</li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
                             ))}
@@ -147,7 +152,7 @@ const NewSlider = () => {
                 </div>
 
                 {/* Next Button */}
-                <button className="m-0 nextPic" onClick={handleNext} disabled={currentIndex===keyMilestones.length-1} style={{cursor:`${currentIndex===keyMilestones.length-1?'not-allowed':'pointer'}`}}>
+                <button className="m-0 nextPic" onClick={handleNext} disabled={currentIndex === keyMilestones.length - 1} style={{ cursor: `${currentIndex === keyMilestones.length - 1 ? 'not-allowed' : 'pointer'}` }}>
                     <i className="bi bi-chevron-right nextPicBtn" style={{ fontWeight: '', fontSize: '2em' }}></i>
                 </button>
 
