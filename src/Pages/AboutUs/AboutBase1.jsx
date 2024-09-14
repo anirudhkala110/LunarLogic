@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const AboutBase1 = () => {
     const [buttonNumber, setButtonNumber] = useState(1)
     return (
-        <div className='container inter-700'>
+        <div className='container inter-700 pt-5'>
             <div className='row pt-5 d-flex align-items-center justify-content-start' style={{ minHeight: '80vh' }}>
                 <div className='' style={{ fontSize: "", lineHeight: '64px' }}>
                     <b className=' my-3 ' style={{ color: '#F15A22', fontSize: '20px' }}>WHO WE ARE</b>
