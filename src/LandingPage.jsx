@@ -25,7 +25,7 @@ const LandingPage = () => {
             </div>
             <div className=''>
                 <Router>
-                    <Navbar />
+                        <Navbar />
                     <Routes>
                         <Route path='/' element={<HomePage />} />
                         <Route path='/about_us' element={<AboutUs />} />
