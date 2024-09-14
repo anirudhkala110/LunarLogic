@@ -20,7 +20,7 @@ const LandingPage = () => {
     }
     return (
         <div className='' style={{ minWidth: "400px" }}>
-            <div className='sideFixed py-4 fs-5 px-3' onClick={handleSidebarLocation}>
+            <div className='sideFixed py-2 fs-5 px-3' onClick={handleSidebarLocation}>
                 Digital Business Transformation
             </div>
             <div className=''>

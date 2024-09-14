@@ -50,7 +50,7 @@
 .sideFixed {
     transform: rotate(90deg);
     color: white;
-    top: 30%;
+    top: 40%;
     background: #54609D;
     position: fixed;
     height: auto;
@@ -67,7 +67,9 @@
     z-index: 1000;
     /* Ensures it stays on top of other content if necessary */
 }
-
+.sideFixed:hover{
+background: #034EA2;
+}
 @media only screen and (max-width:400px) {
     .sideFixed {
         left: 90%;
