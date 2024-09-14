@@ -53,9 +53,9 @@ const Awards = () => {
 
     return (
         <div className='py-5'>
-            <div className='py-5'>
+            <div className='py-2'>
                 <center className='' style={{ fontSize: '1.5em', fontWeight: '600' }}>Awards We Won</center>
-                <div className='d-flex align-items-center justify-content-around'>
+                <div className='d-flex align-items-center justify-content-around py-5'>
                     <button className='prev' onClick={handlePrev} disabled={currentIndex === 0}>
                         <i className='bi bi-chevron-left'></i>
                     </button>
