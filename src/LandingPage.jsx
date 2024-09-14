@@ -15,8 +15,14 @@ import Footer from './Utils/Footer'
 import AboutUs from './Pages/AboutUs/AboutUs'
 
 const LandingPage = () => {
+    const handleSidebarLocation = () => {
+        window.location.href = '/'
+    }
     return (
         <div className='' style={{ minWidth: "400px" }}>
+            <div className='sideFixed py-4 fs-5 px-3' onClick={handleSidebarLocation}>
+                Digital Business Transformation
+            </div>
             <div className=''>
                 <Router>
                     <Navbar />
@@ -27,10 +33,7 @@ const LandingPage = () => {
                     <Footer />
                 </Router>
             </div>
-            <div className='sideFixed py-4 fs-5 px-3'>
-                Digital Business Transformation
-            </div>
-            <div className='sideFixed2 fixed-bottom p-3 rounded-circle text-white my-3 fs-5 mx-3' style={{background:'#54609D',maxWidth:'min-content'}}>
+            <div className='sideFixed2 fixed-bottom p-3 rounded-circle text-white my-3 fs-5 mx-3' style={{ background: '#54609D', maxWidth: 'min-content' }}>
                 Box
             </div>
         </div>

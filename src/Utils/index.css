@@ -48,18 +48,28 @@
 }
 
 .sideFixed {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     color: white;
-    top: 50%;
+    top: 30%;
     background: #54609D;
     position: fixed;
     height: auto;
     width: 350px;
-    border-top-left-radius:15px ;
+    border-top-left-radius: 15px;
     border-top-right-radius: 10px;
-    right: 0vw; /* Stick to the right, with 10vw offset */
+    right: 0vw;
+    /* Stick to the right, with 10vw offset */
+    left: -155px;
+    /* Stick to the right, with 10vw offset */
     border: 2px solid;
     text-align: center;
     cursor: pointer;
-    z-index: 1000; /* Ensures it stays on top of other content if necessary */
+    z-index: 1000;
+    /* Ensures it stays on top of other content if necessary */
+}
+
+@media only screen and (max-width:400px) {
+    .sideFixed {
+        left: 90%;
+    }
 }

@@ -5,13 +5,55 @@ body {
   font-family: 'inter';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  max-width: 10px;
+}
+
+/* Scrollbar button - hidden */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Corner when scrollbar is both vertical and horizontal */
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 255, 0); /* Color of the scrollbar corner */
+}
+
+/* The track (the part that doesn't move) */
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background-color:#d7e1ec; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #034EA2;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+/* Untracked area (rest of the track not under the thumb) */
+::-webkit-scrollbar-track-piece {
+  box-shadow: inset 0px 0px 2px 1px gray; /* Another color for untracked area */
+  height: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+transform: scale(1.2);
+}
+
+
 .inter-400 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
 .inter-700 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
