@@ -32,7 +32,7 @@ const Footer2 = () => {
                 <div className='col-12 text-start'>
                     <p className='text-uppercase text-white mb-2 fw-semibold'><a href='#' className='text-decoration-none'>Job Openings</a></p>
                 </div>
-
+                <input type='hidden' value='Created By Anirudh Kala, #anirudhkala110@gmail.com '/>
             </div>
         </div>
     )
