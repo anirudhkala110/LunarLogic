@@ -14,6 +14,7 @@ import HomePage from './Components/HomePage'
 import Footer from './Utils/Footer'
 import AboutUs from './Pages/AboutUs/AboutUs'
 import Services from './Pages/OurServices/Services'
+import Privacy_and_Policy from './Utils/Privacy_and_Policy'
 
 const LandingPage = () => {
     const handleSidebarLocation = () => {
@@ -26,11 +27,12 @@ const LandingPage = () => {
             </div>
             <div className=''>
                 <Router>
-                        <Navbar />
+                    <Navbar />
                     <Routes>
                         <Route path='/' element={<HomePage />} />
                         <Route path='/about_us' element={<AboutUs />} />
-                        <Route path='/services' element={<Services/>} />
+                        <Route path='/services' element={<Services />} />
+                        <Route path='/privacy_and_policy' element={<Privacy_and_Policy />} />
                     </Routes>
                     <Footer />
                 </Router>
