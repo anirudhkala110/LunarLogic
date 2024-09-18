@@ -18,7 +18,8 @@ const Footer4 = () => {
                     <p className='fw-semibold mb-3' style={{ color: '#B3E6FF' }}>We are hiring! Apply Now</p>
                     <p className='fw-semibold mb-3 text-decoration-underline' style={{ color: '#B3E6FF' }}><a href='#'>careers@lunarlogic.com</a></p>
                     <p className='fw-semibold mb-3' style={{ color: '#B3E6FF' }}><a href='#'>Lunar Logic <sup><i className='bi bi-c-circle'></i></sup> 2024 Copyright LL</a></p>
-                    <input type='hidden' value='Created By #anirudhkala110@gmail.com'/>
+                    <a href='/'>Privacy & Policy</a>
+                    <input type='hidden' value='Created By #anirudhkala110@gmail.com' />
                 </div>
             </div>
         </div>
