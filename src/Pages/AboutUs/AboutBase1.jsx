@@ -16,13 +16,13 @@ const AboutBase1 = () => {
                     </div>
                 </div>
             </div>
-            <div className='row pb-2' style={{marginTop:''}}>
-                <div className='d-flex align-items-center justify-between px-5' style={{ borderTop: '1px solid #C6C5C5' }}>
-                    <a href='#aboutLL' className={`${buttonNumber == 1 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(1)} >Overview</a>
-                    <a href='#values' className={`${buttonNumber == 2 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(2)} >Our Values</a>
-                    <a href='#groups' className={`${buttonNumber == 3 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(3)} >Group</a>
-                    <a href='#leadershipTeamGroup' className={`${buttonNumber == 4 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(4)} >Meet Our Leaders</a>
-                    <a href='#award' className={`${buttonNumber == 5 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(5)} >Awards & Recognition</a>
+            <div className='row pb-1' style={{marginTop:''}}>
+                <div className='d-flex align-items-center justify-start px-5' style={{ borderTop: '1px solid #C6C5C5' }}>
+                    <a href='#aboutLL' className={`${buttonNumber == 1 ? 'btnActive mx-2' : 'btnNormal mx-2 '} p-3 `} onClick={() => setButtonNumber(1)} >Overview</a>
+                    {/* <a href='#values' className={`${buttonNumber == 2 ? 'btnActive mx-2' : 'btnNormal mx-2 '} py-3`} onClick={() => setButtonNumber(2)} >Our Values</a> */}
+                    <a href='#groups' className={`${buttonNumber == 3 ? 'btnActive mx-2' : 'btnNormal mx-2 '} p-3`} onClick={() => setButtonNumber(3)} >Group</a>
+                    <a href='#leadershipTeamGroup' className={`${buttonNumber == 4 ? 'btnActive mx-2' : 'btnNormal mx-2 '} p-3`} onClick={() => setButtonNumber(4)} >Meet Our Leaders</a>
+                    <a href='#award' className={`${buttonNumber == 5 ? 'btnActive mx-2' : 'btnNormal mx-2 '} p-3`} onClick={() => setButtonNumber(5)} >Awards & Recognition</a>
                 </div>
             </div>
         </div>

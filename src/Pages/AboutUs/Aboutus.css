@@ -12,17 +12,18 @@
 }
 
 .btnActive {
-    border: 5px solid #f15922;
+    /* border: 5px solid #f15922; */
     border-bottom: 0px;
     border-left: 0px;
     border-right: 0px;
     color: white;
     cursor: pointer;
     transition: .3s ease-in-out;
+    background-color: #f15922;
 }
 
 button:focus {
-    border: 5px solid #F15A22;
+    /* border: 5px solid #F15A22; */
     outline: none;
 }
 
@@ -179,7 +180,7 @@ button.disabled {
     margin-top: -127px;
     max-width: 350px;
     width: min-content;
-    transition: .1s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .hoverImageForDescriptionInnerDiv:hover {

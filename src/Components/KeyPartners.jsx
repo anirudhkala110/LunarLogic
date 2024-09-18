@@ -27,7 +27,7 @@ const keyPartners = [
 const KeyPartners = () => {
     return (
         <div>
-            <div className='container py-5'>
+            <div className='container py-5' id="keyPartners">
                 <div className='d-flex align-items-center justify-content-between'>
                     <button className='btn rounded-0 fs-3' style={{fontWeight:'600'}}>Our Key Partners</button>
                     <button className='btn rounded-0 btn-outline-dark'>View All Partners <i className='bi bi-arrow-right'></i></button>

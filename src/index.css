@@ -60,3 +60,86 @@ transform: scale(1.2);
   font-weight: 700;
   font-style: normal;
 }
+
+/* Navlink  */
+/* General Styles for Navbar */
+.nav-link {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
+  font-weight: 600;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #007BB6;
+  color: #007BB6;
+}
+
+.nav-link:active,
+.nav-link-active {
+  border-bottom: 2px solid black;
+  background-color: #007BB6;
+  color: white;
+}
+
+/* Hover Effect for Active Links */
+.nav-link-active {
+  border-bottom: 2px solid #007BB6;
+}
+
+/* Utility Class for Flex Alignment */
+.setWidth1000px {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) {
+  .setWidth1000px {
+      display: block;
+  }
+}
+
+/* Form Button Styles */
+.formButton {
+  color: #B3E6FF;
+  border: 2px solid;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.formButton:hover {
+  background-color: #0B7CAC;
+  color: #B3E6FF;
+}
+
+/* Side Fixed Button */
+.sideFixed {
+  transform: rotate(90deg);
+  color: white;
+  position: fixed;
+  top: 40%;
+  background-color: #54609D;
+  padding: 10px;
+  width: 350px;
+  border-radius: 10px;
+  left: -155px;
+  border: 2px solid white;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.sideFixed:hover {
+  background-color: #034EA2;
+}
+
+/* Responsive for Smaller Devices */
+@media only screen and (max-width: 400px) {
+  .sideFixed {
+      left: 90%;
+  }
+}

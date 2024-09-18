@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer1 = () => {
     return (
-        <div className='container'>
+        <div className='container' id='globe'>
             <div className='row col-12'>
                 <div className='col-4 px-2'>
                     <p className='text-uppercase text-white fw-semibold mb-2'>Who We Are</p>
@@ -49,6 +49,7 @@ const Footer1 = () => {
                 </div>
 
             </div>
+            <input type='hidden' value='Created By #anirudhkala110@gmail.com'/>
         </div>
     )
 }

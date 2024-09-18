@@ -2,12 +2,11 @@ import React from 'react'
 import randomPic from './randomPic.jpg'
 let array = []
 const LeadershipTeamGroup = () => {
-    for (let index = 0; index < 17; index++) {
+    for (let index = 0; index < 5; index++) {
         array[index] = index;
     }
-    console.log(array)
     return (
-        <div className='py-5'>
+        <div className='py-5' id='leaderShipTeam'>
             <div className='container py-5'>
                 <div>
                     <center className='mb-2' style={{ fontSize: '2.5em', fontWeight: 'bold' }}>Leadership Team (Group)</center>

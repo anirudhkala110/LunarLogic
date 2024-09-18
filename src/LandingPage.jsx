@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './Components/HomePage'
 import Footer from './Utils/Footer'
 import AboutUs from './Pages/AboutUs/AboutUs'
+import Services from './Pages/OurServices/Services'
 
 const LandingPage = () => {
     const handleSidebarLocation = () => {
@@ -29,6 +30,7 @@ const LandingPage = () => {
                     <Routes>
                         <Route path='/' element={<HomePage />} />
                         <Route path='/about_us' element={<AboutUs />} />
+                        <Route path='/services' element={<Services/>} />
                     </Routes>
                     <Footer />
                 </Router>

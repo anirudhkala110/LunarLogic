@@ -58,7 +58,7 @@ const NewSlider = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-    console.log(windowWidth)
+    // console.log(windowWidth)
     return (
         <div
             onKeyDown={handleKeyDown}

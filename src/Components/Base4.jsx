@@ -4,12 +4,12 @@ import apple from '../Assets/Logos/apple.jpg'
 import f1s from '../Assets/Logos/f1s.svg'
 import gta from '../Assets/Logos/gta.png'
 const Base4 = () => {
-    const repeater = [0, 1]
+    const repeater = [0]
     return (
-        <div>
+        <div className='py-5' id='ourClients'>
             <div className='container py-5'>
                 <button className='btn fs-1' style={{fontSize:'700'}}>Our clients</button>
-                <div>
+                <div className='mt-2'>
                     {
                         repeater.map(i => (
                             <div className='row' key={i}>

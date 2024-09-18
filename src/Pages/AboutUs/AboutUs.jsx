@@ -19,9 +19,9 @@ const AboutUs = () => {
             <div className='aboutLL bg-white py-5' id="aboutLL">
                 <AboutLL />
             </div>
-            <div className='values bg-light py-5' id="values">
+            {/* <div className='values bg-light py-5' id="values">
                 <OurValues />
-            </div>
+            </div> */}
             <div className='groups bg-light py-5' id="groups">
                 <Groups />
             </div>

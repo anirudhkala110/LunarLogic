@@ -16,31 +16,31 @@ const HomePage = () => {
             <div className='base1 container px-0 pt-5' id="top">
                 <Base1 />
             </div>
-            <div className='base2 bg-white'>
+            <div className='bg-white' id='base2'>
                 <Base2 />
             </div>
-            <div className='base3 bg-light'>
+            <div className='bg-light' id='base3'>
                 <Base3 />
             </div>
-            <div className='base4 bg-white'>
+            <div className='bg-white' id='base4'>
                 <Base4 />
             </div>
-            <div className='base5 bg-light'>
+            <div className='bg-light' id='base5'>
                 <Base5 />
             </div>
-            <div className='newsLetterSignUp '>
+            <div className='' id='newsLetterSignUp'>
                 <NewLetterSignup />
             </div>
-            <div className='keyPartners'>
+            <div className='py-5' id='keyPartners'>
                 <KeyPartners />
             </div>
-            <div className='inNews bg-white'>
+            <div className='bg-white' id='inNews'>
                 <Base6 />
             </div>
-            <div className='reachOutTeam'>
+            <div className='' id='reachOutTeam'>
                 <TeamPage />
             </div>
-            <div className='benchmark'>
+            <div className='' id='benchmark'>
                 <BenchMark />
             </div>
         </div>

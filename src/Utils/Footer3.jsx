@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer3 = () => {
     return (
-        <div className='container'>
+        <div className='container' >
             <p className='fw-semibold my-2 text-white'>Schedule A CallBack</p>
             <form className='form px-3' style={{ maxWidth: '1000px' }}>
                 <div className='input-group mb-3'>
