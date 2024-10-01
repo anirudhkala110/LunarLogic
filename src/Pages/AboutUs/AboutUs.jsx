@@ -22,18 +22,18 @@ const AboutUs = () => {
             {/* <div className='values bg-light py-5' id="values">
                 <OurValues />
             </div> */}
-            <div className='groups bg-light py-5' id="groups">
+            {/* <div className='groups bg-light py-5' id="groups">
                 <Groups />
-            </div>
-            <div className='SpecialisedBusinessUnit py-5' style={{ background: '#034EA2' }} id="groups">
+            </div> */}
+            {/* <div className='SpecialisedBusinessUnit py-5' style={{ background: '#034EA2' }} id="groups">
                 <SpecialisedBusinessUnit />
-            </div>
+            </div> */}
             <div className='SettingTheStage bg-light py-5'>
                 <SettingTheStage />
             </div>
-            <div className='leaderTeamGroup bg-white py-5' id="leadershipTeamGroup">
+            {/* <div className='leaderTeamGroup bg-white py-5' id="leadershipTeamGroup">
                 <LeadershipTeamGroup />
-            </div>
+            </div> */}
             <div className='awards bg-light py-5' id="award">
                 <Awards />
             </div>

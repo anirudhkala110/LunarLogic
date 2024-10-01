@@ -1,41 +1,40 @@
 import React from 'react'
-import adidas from '../Assets/Logos/adidas.png'
-import apple from '../Assets/Logos/apple.jpg'
-import f1s from '../Assets/Logos/f1s.svg'
-import gta from '../Assets/Logos/gta.png'
+import adidas from '../Assets/Logos/LN.png'
+import apple from '../Assets/Logos/BjajF.png'
+import f1s from '../Assets/Logos/icicilombard.png'
+import gta from '../Assets/Logos/babychakra.png'
+import google from '../Assets/Logos/google.png'
+import amazon from '../Assets/Logos/TOI1.png'
+import TOI from '../Assets/Logos/TJ.png'
+import OYO from '../Assets/Logos/wz.png'
+const keyPartners = [
+    { img: google, info: '' },
+    { img: adidas, info: '' },
+    { img: apple, info: '' },
+    { img: f1s, info: '' },
+    { img: gta, info: '' },
+    { img: amazon, info: '' },
+    { img: TOI, info: '' },
+    { img: OYO, info: '' },
+]
 const Base4 = () => {
-    const repeater = [0]
     return (
         <div className='py-5' id='ourClients'>
             <div className='container py-5'>
-                <button className='btn fs-1' style={{fontSize:'700'}}>Our clients</button>
+                <button className='btn fs-1' style={{ fontSize: '700' }}>Our clients</button>
                 <div className='mt-2'>
-                    {
-                        repeater.map(i => (
-                            <div className='row' key={i}>
-                                <div className='d-flex justify-content-center align-items-center col-sm-6 mb-3 col-md-3' style={{border:'1px solid #E6E6E6'}}>
+                    <div className='row'>
+                        {
+                            keyPartners.map((data, i) => (
+                                <div key={i} className='d-flex justify-content-center align-items-center col-sm-6 mb-3 col-md-3' style={{ border: '1px solid #E6E6E6' }}>
                                     <div className='logos' style={{ objectFit: 'contain', aspectRatio: '', }}>
-                                        <img src={adidas} />
+                                        <img src={data.img} />
                                     </div>
                                 </div>
-                                <div className='d-flex justify-content-center align-items-center col-sm-6 mb-3 col-md-3' style={{border:'1px solid #E6E6E6'}}>
-                                    <div className='logos' style={{ objectFit: 'contain', aspectRatio: '', }}>
-                                        <img src={apple} />
-                                    </div>
-                                </div>
-                                <div className='d-flex justify-content-center align-items-center col-sm-6 mb-3 col-md-3' style={{border:'1px solid #E6E6E6'}}>
-                                    <div className='logos' style={{ objectFit: 'contain', aspectRatio: '', }}>
-                                        <img src={f1s} />
-                                    </div>
-                                </div>
-                                <div className='d-flex justify-content-center align-items-center col-sm-6 mb-3 col-md-3' style={{border:'1px solid #E6E6E6'}}>
-                                    <div className='logos' style={{ objectFit: 'contain', aspectRatio: '', }}>
-                                        <img src={gta} />
-                                    </div>
-                                </div>
-                            </div>
-                        ))
-                    }
+
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
         </div>

@@ -27,7 +27,7 @@ const Navbar = () => {
         <nav className="container-fluid shadow-md navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div className="container d-flex align-items-center justify-between">
                 <a className="navbar-brand" style={{ fontWeight: '700', fontSize: '' }} href="/">
-                <img src={logo} style={{maxWidth:'70px',filter:'drop-shadow(0px 0px 1px)'}}/>
+                    <img src={logo} style={{ maxWidth: '70px', filter: 'drop-shadow(0px 0px 1px)' }} />
                 </a>
 
                 <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,6 +69,9 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <a className={`nav-link px-2 text-uppercase ${(activeLink === '/#jobOpening' || activeLink === '/about_us#jobOpening') ? 'nav-link-active text-white' : ''}`} href="#jobOpening">Work with Us</a>
+                            </li>
+                            <li>
+                                <a className={`nav-link px-2 text-uppercase ${(activeLink === '/privacy_and_policy' || activeLink === '/privacy_and_policy') ? 'nav-link-active text-white' : ''}`} href="/privacy_and_policy">Privacy & Policy</a>
                             </li>
                         </ul>
 

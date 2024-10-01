@@ -1,15 +1,12 @@
 import React from 'react'
-import adidas from '../Assets/Logos/adidas.png'
-import apple from '../Assets/Logos/apple.jpg'
-import f1s from '../Assets/Logos/f1s.svg'
-import gta from '../Assets/Logos/gta.png'
-import flipkart from '../Assets/Logos/flipkart.png'
+import adidas from '../Assets/Logos/LN.png'
+import apple from '../Assets/Logos/BjajF.png'
+import f1s from '../Assets/Logos/icicilombard.png'
+import gta from '../Assets/Logos/babychakra.png'
 import google from '../Assets/Logos/google.png'
-import meta from '../Assets/Logos/meta.png'
-import Adobe from '../Assets/Logos/Adobe.png'
-import amazon from '../Assets/Logos/amazon.png'
-import TOI from '../Assets/Logos/TOI.jpg'
-import OYO from '../Assets/Logos/OYO.jpg'
+import amazon from '../Assets/Logos/TOI1.png'
+import TOI from '../Assets/Logos/TJ.png'
+import OYO from '../Assets/Logos/wz.png'
 
 const keyPartners = [
     { img: google, info: '' },
@@ -17,9 +14,6 @@ const keyPartners = [
     { img: apple, info: '' },
     { img: f1s, info: '' },
     { img: gta, info: '' },
-    { img: flipkart, info: '' },
-    { img: meta, info: '' },
-    { img: Adobe, info: '' },
     { img: amazon, info: '' },
     { img: TOI, info: '' },
     { img: OYO, info: '' },

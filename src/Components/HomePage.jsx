@@ -9,6 +9,7 @@ import KeyPartners from './KeyPartners'
 import Base6 from './Base6'
 import TeamPage from './TeamPage'
 import BenchMark from './BenchMark'
+import CookieBanner from '../Utils/CookieBanner'
 
 const HomePage = () => {
     return (
@@ -31,17 +32,20 @@ const HomePage = () => {
             <div className='' id='newsLetterSignUp'>
                 <NewLetterSignup />
             </div>
-            <div className='py-5' id='keyPartners'>
+            {/* <div className='py-5' id='keyPartners'>
                 <KeyPartners />
-            </div>
-            <div className='bg-white' id='inNews'>
+            </div> */}
+            {/* <div className='bg-white' id='inNews'>
                 <Base6 />
-            </div>
+            </div> */}
             <div className='' id='reachOutTeam'>
                 <TeamPage />
             </div>
             <div className='' id='benchmark'>
                 <BenchMark />
+            </div>
+            <div>
+                <CookieBanner />
             </div>
         </div>
     )

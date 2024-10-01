@@ -1,0 +1,90 @@
+/* CookieBanner.css */
+.cookie-banner {
+    position: fixed;
+    bottom: 200px;
+    /* Start off-screen */
+    width: 100%;
+    z-index: 1000;
+    transition: bottom 0.4s ease-in-out;
+    /* Transition to slide up */
+    animation: showOut 1s linear;
+}
+
+.cookie-banner.visible {
+    /* Slide into view */
+    animation: showIn 1s linear;
+    bottom: -200px;
+}
+.cookie-banner.notvisible {
+    /* Slide into view */
+    animation: showIn 1s linear;
+    bottom: -200px;
+}
+
+@keyframes showIn {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-200px);
+        opacity: 1;
+    }
+}
+
+@keyframes showOut {
+    0% {
+        transform: translateY(-200px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
+
+.cookie-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cookie-content p {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.cookie-content a {
+    color: #1E90FF;
+    text-decoration: underline;
+}
+
+/* Button hover effects */
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #006400;
+    /* Slightly darker on hover for accept button */
+}
+
+button.decline:hover {
+    background-color: #b71c1c;
+    /* Darker on hover for reject button */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .cookie-content p {
+        font-size: 13px;
+    }
+
+    .cookie-banner button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
