@@ -68,7 +68,7 @@ const CookieBanner = () => {
                     <p>
                         We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic.
                         By clicking "Accept All", you consent to our use of cookies. Read more about our 
-                        <a href="/privacy-policy" style={{ color: '#1E90FF', textDecoration: 'underline', marginLeft: '5px' }}>Privacy Policy</a>.
+                        <a href="/privacy_and_policy" style={{ color: '#1E90FF', textDecoration: 'underline', marginLeft: '5px' }}>Privacy Policy</a>.
                     </p>
                 </div>
             </CookieConsent>
