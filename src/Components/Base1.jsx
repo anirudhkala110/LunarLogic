@@ -9,7 +9,7 @@ import pic7 from '../Assets/Images/pic7.jpg';
 import './Base.css'
 
 const images = [
-    { img: pic5, info: 'Strategy Development. Market Research, Brand Positioning Etc.' },
+    { img: pic5, info: 'Integrating cutting-edge martech solutions to streamline your marketing efforts.' },
     { img: pic2, info: 'BLogs, Social Media, Graphics Production and More' },
     { img: pic3, info: 'SEO & SEM. Work on Keywords, paage optimization, Campaings, Analytics Etc.' },
     { img: pic4, info: 'Partnerships and Brand Advocacy with Social Media Stategies and More' },

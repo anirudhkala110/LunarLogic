@@ -42,16 +42,16 @@ const Navbar = () => {
                     <div className="offcanvas-body setWidth1000px justify-content-between">
                         <ul className="navbar-nav">
                             <li>
-                                <a className={`nav-link text-uppercase ${activeLink === '/about_us' ? 'nav-link-active text-white' : ''}`} href="/about_us">About Us</a>
+                                <a className={`nav-link px-2 text-uppercase ${activeLink === '/about_us' ? 'nav-link-active text-white' : ''}`} href="/about_us">About Us</a>
                             </li>
                             <li>
-                                <a className={`nav-link text-uppercase ${activeLink === '/#base3' ? 'nav-link-active text-white' : ''}`} href="/#base3">Our Work</a>
+                                <a className={`nav-link px-2 text-uppercase ${activeLink === '/#base3' ? 'nav-link-active text-white' : ''}`} href="/#base3">Our Work</a>
                             </li>
-                            <li>
-                                <a className={`nav-link text-uppercase ${activeLink === '/#keyPartners' ? 'nav-link-active text-white' : ''}`} href="/#keyPartners">Industries</a>
-                            </li>
+                            {/* <li>
+                                <a className={`nav-link px-2 text-uppercase ${activeLink === '/#keyPartners' ? 'nav-link-active text-white' : ''}`} href="/#keyPartners">Industries</a>
+                            </li> */}
                             <li className="nav-item dropdown">
-                                <a className={`nav-link text-uppercase dropdown-toggle ${activeLink.startsWith('/services') ? 'nav-link-active tex-white' : ''}`} href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                                <a className={`nav-link px-2 text-uppercase dropdown-toggle ${activeLink.startsWith('/services') ? 'nav-link-active tex-white' : ''}`} href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a className="dropdown-item" href="/services#services_for_Technology">Technology</a></li>
                                     <li><a className="dropdown-item" href="/services#services_for_Marketing">Marketing</a></li>
@@ -59,16 +59,16 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li>
-                                <a className={`nav-link text-uppercase ${activeLink === '/#ourClients' ? 'nav-link-active text-white' : ''}`} href="/#ourClients">Our Clients</a>
+                                <a className={`nav-link px-2 text-uppercase ${activeLink === '/#ourClients' ? 'nav-link-active text-white' : ''}`} href="/#ourClients">Our Clients</a>
+                            </li>
+                            {/* <li>
+                                <a className={`nav-link px-2 text-uppercase ${activeLink === '/about_us#leaderShipTeam' ? 'nav-link-active text-white' : ''}`} href="/about_us#leaderShipTeam">Testimonials</a>
+                            </li> */}
+                            <li>
+                                <a className={`nav-link px-2 text-uppercase ${(activeLink === '/about_us#contactUs' || activeLink === '/#contactUs') ? 'nav-link-active text-white' : ''}`} href="#contactUs">Contact Us</a>
                             </li>
                             <li>
-                                <a className={`nav-link text-uppercase ${activeLink === '/about_us#leaderShipTeam' ? 'nav-link-active text-white' : ''}`} href="/about_us#leaderShipTeam">Testimonials</a>
-                            </li>
-                            <li>
-                                <a className={`nav-link text-uppercase ${(activeLink === '/about_us#contactUs' || activeLink === '/about_us#contactUs') ? 'nav-link-active text-white' : ''}`} href="#contactUs">Contact Us</a>
-                            </li>
-                            <li>
-                                <a className={`nav-link text-uppercase ${(activeLink === '#jobOpening' || activeLink === '/about_us#jobOpening') ? 'nav-link-active text-white' : ''}`} href="#jobOpening">Work with Us</a>
+                                <a className={`nav-link px-2 text-uppercase ${(activeLink === '/#jobOpening' || activeLink === '/about_us#jobOpening') ? 'nav-link-active text-white' : ''}`} href="#jobOpening">Work with Us</a>
                             </li>
                         </ul>
 
