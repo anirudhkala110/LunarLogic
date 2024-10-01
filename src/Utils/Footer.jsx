@@ -7,12 +7,12 @@ import Footer4 from './Footer4'
 const Footer = () => {
   return (
     <div style={{ minWidth: "400px" }}>
-      <div className='p-3' style={{ background: "#034EA2" }}>
+      {/* <div className='p-3' style={{ background: "#034EA2" }}>
         <Footer1 />
-      </div>
-      <div className='p-3' style={{ background: "#034EA2" }}>
+      </div> */}
+      {/* <div className='p-3' style={{ background: "#034EA2" }}>
         <Footer2 />
-      </div>
+      </div> */}
       <div className='p-3' style={{ background: "#034EA2" }}>
         <Footer3 />
       </div>

@@ -13,7 +13,8 @@ const Base2 = () => {
                         <b style={{ fontSize: '25px' }}>Lunar Logic - Illuminating Your Digital Path</b>
                         <hr />
                         <br />
-                        <p>Welcome to Lunar Logic, where digital marketing meets creativity and technology under the moonlit sky! Our boutique agency offers a full spectrum of services, each phase designed to guide your brand through its unique journey. Whether you’re a new moon just starting out or a full moon at your peak, we have the perfect solution for you.</p>
+                        <p>Welcome to LunarLogic, where technology meets strategic creativity to fuel your brand’s digital evolution. We offer a suite of services that not only enhance your digital presence but also drive meaningful business outcomes. Our team of experts is dedicated to crafting bespoke solutions that align with your unique goals and challenges.
+                        </p>
                         <a href='/about_us'>
                             <button className='fs-5 my-3 fw-semibold' style={{ color: "#007BB6" }}>KNOW MORE &nbsp;&nbsp; <i className='bi bi-arrow-right'></i></button>
                         </a>
