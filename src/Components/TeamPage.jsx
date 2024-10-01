@@ -1,18 +1,37 @@
 import React from 'react'
 
 const TeamPage = () => {
-    const notice = "This serves as a public notice to raise awareness regarding the misuse of Logicserve Digital Private Limited’s (Lunar Logic) identity. It has come to our attention that certain individuals/entities are engaging in fraudulent activities by falsely representing themselves as employees, representatives, or agents of Lunar Logic. These perpetrators aim to exploit and deceive prospective job seekers by illegitimately offering employment opportunities through various online platforms such as [Telegram, WhatsApp, LinkedIn and other websites]. We understand that they are also reaching out to people via telephone calls, issuing counterfeit offer letters, conducting fake interviews and requesting financial deposits into specific bank accounts. We encourage the public to exercise caution and verify any such communications to ensure authenticity. Please note that Lunar Logic never solicits any form of payment from prospective job seekers or candidates seeking employment opportunities and does not authorize any individual to collect money or enter into any monetary arrangements in exchange for job placements within the organization. Our human resources/recruitment team exclusively corresponds through email addresses with the domain [LUNARLOGIC.COM]. If you receive any communication from any other domain or through a generic email ID ending with Gmail/Yahoo domain regarding a job offer or interview call, exercise vigilance, as it may indicate a potential scam. In the event that you believe you have fallen victim to recruitment fraud, we urge you to promptly report the incident to law enforcement agencies."
+    const notice = `
+        <b>LunarLogic</b> would like to bring to the public's attention an unfortunate rise in fraudulent activities where individuals or entities are misusing our identity. It has come to light that certain parties are falsely claiming to be employees, representatives, or agents of LunarLogic in an attempt to deceive job seekers. 
+        <br/><br/>
+        These fraudsters are leveraging online platforms such as <b>[Telegram, WhatsApp, LinkedIn, and various websites]</b>, along with direct phone calls, to offer fake employment opportunities. In some cases, they are even issuing fraudulent offer letters, conducting illegitimate interviews, and requesting financial payments into specific bank accounts.
+        <br/><br/>
+        We urge everyone to exercise caution and verify any communications that appear to come from LunarLogic to confirm their authenticity.
+        <br/><br/>
+        <b>LunarLogic does not charge any fees from job seekers at any stage of the recruitment process.</b> We do not authorize any individual or entity to request payments or make financial arrangements in exchange for employment opportunities.
+        <br/><br/>
+        All official communication from LunarLogic's human resources or recruitment teams will come from email addresses that use the domain <b>[LUNARLOGIC.COM]</b>. If you receive communication from any other domain or generic email services such as Gmail or Yahoo regarding job offers or interviews, please proceed with caution, as this is likely a scam.
+        <br/><br/>
+        If you believe you have been targeted by fraudulent recruitment schemes, we strongly encourage you to report the incident to the appropriate law enforcement authorities immediately.
+    `;
+
     return (
         <div className='py-5' id="contactUs">
             <div className='container rounded-2 my-5' style={{ background: '#034EA2' }}>
                 <div className='row py-5 px-2'>
-                    <div className='text-light'>
-                        Ready to embark on a lunar journey with us? Contact Lunar Logic today and let’s discuss how we can help your brand reach its full potential. Whether you have a question, need a consultation, or just want to say hello, we’re here for you.
-                        {/* <a href=''> */}
-                        <button className='btn btn-light rounded-0 ms-2 py-0'>Get In Touch</button>
-                        {/* </a> */}
+                    <div className='text-white my-2 d-flex align-items-center'>
+                        <button className='rounded-0 btn btn-primary'>Get In Touch</button>
+                        <div className='my-3'>
+                            <a href='tel:+917669270784'>
+                                <button className='btn rounded-0 btn-light'>Call Us: &nbsp; +91 7669270784</button>
+                            </a>
+                        </div>
                     </div>
-                    <div className='col-sm-12 col-md-6 my-2 py-5'>
+                    <div className='text-light'>
+                        Ready to elevate your brand’s digital presence? Contact LunarLogic today to discover how we can help you achieve your business goals. Whether you need a detailed consultation or just want to learn more about our services, we’re here to assist.
+                    </div>
+
+                    <div className='col-sm-12 col-md-12 col-lg-6 my-2 py-5'>
                         <div className='text-white'>
                             <b className='fs-4' style={{ fontWeight: '700' }}>Reach out to our specialist team to initiate the conversation</b>
                             <p>Fill your details, and our team will contact you.</p>
@@ -20,10 +39,10 @@ const TeamPage = () => {
                             <br />
                             <br />
                             <b style={{ fontWeight: '700' }} className='fs-3'>PUBLIC NOTICE </b><br />
-                            <textarea className='text-black p-3 rounded w-100' rows={20} style={{ resize: 'none' }} value={notice}></textarea>
+                            <div className='text-black p-3 rounded w-100' style={{ backgroundColor: 'white',maxHeight:"500px",overflowY:'auto' }} dangerouslySetInnerHTML={{ __html: notice }}></div>
                         </div>
                     </div>
-                    <div className='col-sm-12 col-md-6 my-3 py-5'>
+                    <div className='col-sm-12 col-md-12 col-lg-6 my-3 py-5'>
                         <form className='form bg-white rounded-3 p-3'>
                             <div className='form-group mb-3'>
                                 <label style={{ fontWeight: '600', fontSize: '18px' }}>Service Interested <sup className='text-danger'>*</sup></label>
@@ -96,4 +115,4 @@ const TeamPage = () => {
     )
 }
 
-export default TeamPage
+export default TeamPage;

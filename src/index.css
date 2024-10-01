@@ -21,30 +21,34 @@ body {
 
 /* Corner when scrollbar is both vertical and horizontal */
 ::-webkit-scrollbar-corner {
-  background: rgba(0, 0, 255, 0); /* Color of the scrollbar corner */
+  background: rgba(0, 0, 255, 0);
+  /* Color of the scrollbar corner */
 }
 
 /* The track (the part that doesn't move) */
 ::-webkit-scrollbar-track {
   border-radius: 50px;
-  background-color:#d7e1ec; /* Color of the track */
+  background-color: #d7e1ec;
+  /* Color of the track */
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #034EA2;
   border-radius: 50px;
+  border: 1px solid white;
   cursor: pointer;
   transition: .2s ease-in-out;
 }
 
 /* Untracked area (rest of the track not under the thumb) */
 ::-webkit-scrollbar-track-piece {
-  box-shadow: inset 0px 0px 2px 1px gray; /* Another color for untracked area */
+  box-shadow: inset 0px 0px 2px 1px gray;
+  /* Another color for untracked area */
   height: 100px;
 }
 
-::-webkit-scrollbar-thumb:hover{
-transform: scale(1.2);
+::-webkit-scrollbar-thumb:hover {
+  transform: scale(1.2);
 }
 
 
@@ -98,7 +102,7 @@ transform: scale(1.2);
 
 @media only screen and (max-width: 1000px) {
   .setWidth1000px {
-      display: block;
+    display: block;
   }
 }
 
@@ -141,6 +145,12 @@ transform: scale(1.2);
 /* Responsive for Smaller Devices */
 @media only screen and (max-width: 400px) {
   .sideFixed {
-      left: 90%;
+    left: 90%;
   }
+}
+
+button,.btn,
+button:focus {
+  outline: none;
+  border: none;
 }
