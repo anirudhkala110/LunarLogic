@@ -2,7 +2,9 @@ button:focus {
     outline: none !important;
     border: 0px solid transparent !important;
 }
-
+.privacyPolicyBg{
+    background-image: url(./Assets/Logos/banner.jpg);
+}
 .hoverCards {
     transition: .2s ease-in-out;
     min-height: 270px;

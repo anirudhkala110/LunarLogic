@@ -2,8 +2,11 @@ import React from 'react';
 
 const PrivacyAndPolicy = () => {
     return (
-        <div className="privacy-policy py-5  container">
-            <div class="container py-5 my-5 bg-white shadow border">
+        <div className="privacy-policy py-5  ">
+            <div className='privacyPolicyBg mt-5'>
+                <div className='py-5 text-white container' style={{fontSize:'2.5em'}}>Privacy & Policy</div>
+            </div>
+            <div class="container py-5 my-5 bg-white shadow border container">
                 <p class="">
                     <strong>Last updated:</strong> June 21, 2024</p>
 
