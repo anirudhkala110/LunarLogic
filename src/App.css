@@ -4,46 +4,50 @@ button:focus {
 }
 
 .hoverCards {
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
     min-height: 270px;
-    filter: drop-shadow(0px 10px 5px rgba(90, 82, 82, 0.418));
+    border: 0px;
+    /* filter: drop-shadow(0px 10px 5px rgba(90, 82, 82, 0.418)); */
 }
-
+.hoverCards p{
+line-height: 3;
+}
 .hoverCards li {
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
     filter: blur(0px);
+    line-height: 2;
     list-style-type: disc;
     margin: 15px;
 }
 
 .hoverCards:hover {
     cursor: pointer;
-    /* font-weight: bold; */
-    background-color: #007BB6;
-    box-shadow: inset 0px 0px 100px 10px rgba(17, 17, 17, 0.699);
-    filter: blur(0px);
 }
 
 .hoverCards:hover li {
-    color: white;
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
     cursor: pointer;
-    font-weight: 600;
 }
 
 .hoverCards:hover h3 {
-    color: white !important;
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
     cursor: pointer;
     font-weight: 900;
 }
 .hoverCards h3 {
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
     cursor: pointer;
     font-weight: 900;
     font-size: 1.5em;
 }
-
+.unorderedList li{
+    list-style-type: disc;
+    line-height: 2;
+}
+.unorderedList p{
+    list-style-type: disc;
+    line-height: 2;
+}
 /* General Styles for Navbar */
 .nav-link {
     border-bottom: 2px solid transparent;

@@ -51,13 +51,15 @@ const Navbar = () => {
                                 <a className={`nav-link px-2 text-uppercase ${activeLink === '/#keyPartners' ? 'nav-link-active text-white' : ''}`} href="/#keyPartners">Industries</a>
                             </li> */}
                             <li className="nav-item dropdown">
-                                <a className={`nav-link px-2 text-uppercase dropdown-toggle ${activeLink.startsWith('/services') ? 'nav-link-active tex-white' : ''}`} href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a className="dropdown-item" href="/services#services_for_Technology">Technology</a></li>
-                                    <li><a className="dropdown-item" href="/services#services_for_Marketing">Marketing</a></li>
-                                    <li><a className="dropdown-item" href="/services#services_for_More">More..</a></li>
+                                <a className={`nav-link px-2 text-uppercase dropdown-toggle ${activeLink.startsWith('/services') ? 'nav-link-active text-white' : ''}`} href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                                <ul className="dropdown-menu w-100 border" aria-labelledby="navbarDropdownMenuLink">
+                                    <li ><a className="dropdown-item" href="/services#services_for_Marketing">Marketing</a></li>
+                                    <li ><a className="dropdown-item" href="/services#services_for_Technology">Technology</a></li>
+                                    <li ><a className="dropdown-item" href="/services#services_for_More">More..</a></li>
                                 </ul>
                             </li>
+
+
                             <li>
                                 <a className={`nav-link px-2 text-uppercase ${activeLink === '/#ourClients' ? 'nav-link-active text-white' : ''}`} href="/#ourClients">Our Clients</a>
                             </li>
