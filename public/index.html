@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/lunarLogicLogo.svg" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -32,29 +32,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
-    <script>
-      // const setThumbHeight = () => {
-      //   const scrolled = window.scrollY; // Current scroll position
-      //   const scrollHeight = document.documentElement.scrollHeight; // Total scrollable height
-      //   const clientHeight = document.documentElement.clientHeight; // Visible height of the window
-      //   console.log("scrolled: ",scrolled)
-      //   console.log("scrollHeight: ",scrollHeight)
-      //   console.log("clientHeight: ",clientHeight)
-      //   // Calculate the thumb height as a percentage of visible content
-      //   const thumbHeightPercentage = (scrolled / clientHeight)+1;
-      //   const thumbHeight =(100/thumbHeightPercentage) * 0.1; // Adjust based on scroll
-  
-      //   // Set thumb height dynamically
-      //   console.log("thumbHeight ",thumbHeight,'\n','thumbHeightPercentage: ',thumbHeightPercentage)
-      //   document.styleSheets[0].insertRule(
-      //     `::-webkit-scrollbar-thumb { height: ${thumbHeight}px; top:0px;background:#034EA2}`, 
-      //     document.styleSheets[0].cssRules.length
-      //   );
-      // };
-  
-      // Adjust scrollbar thumb height on scroll
-      window.addEventListener('scroll', setThumbHeight);
-    </script>
     <title>Lunar Logic</title>
   </head>
   <body>
